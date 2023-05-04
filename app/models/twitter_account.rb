@@ -1,7 +1,7 @@
 require 'tweetkit'
 
 class TwitterAccount < ApplicationRecord
-  belongs_to :user
+  belongs_to :user, dependent: :destroy
   has_many :tweets
 
   validates :username, uniqueness: true
