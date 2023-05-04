@@ -24,5 +24,5 @@
 <% end %>
 
 <% if tweet.persisted? %>
-    <%= button_to "Delete", tweet, method: :delete, data: {confirm: "Are you sure?" }, class: "btn btn-outline-danger" %>
+    <%= link_to "Delete", tweet, method: :delete, data: {confirm: "Are you sure?" }, class: "btn btn-outline-danger" %>
 <% end %>
